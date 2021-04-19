@@ -10,23 +10,23 @@ Alternatively, the subroutines can be used as a part of an Abaqus user subroutin
 To use the subroutines as a part of an Abaqus simulation your installation must be linked with a Fortran compiler and compatible Visual Studio installation, see: 
 
 The following material properties must be defined to plot the failure envelopes:   
-**X<sub>T</sub>** = tensile strength fiber direction (GPa)
-**X<sub>C</sub>** = compressive strength fiber direction (GPa)
-**Y<sub>T</sub><sup>is</sup>** =  in-situ tensile strength transverse direction (GPa)
-**Y<sub>C</sub><sup>is</sup>** = in-situ compressive strength transverse direction (GPa)
-**S<sub>L</sub><sup>is</sup>** = in-situ longitudinal shear strength (GPa)
-**η<sub>L</sub>** = shear friction coefficient longitudinal direction (-)
-**α<sub>0</sub>** = failure plane angle pure transverse compression (degrees)
-
-If the in-situ properties are unknown, they can be calculated using the insitu_prop_calculator.py script. This will require the following material properties
-**β** = shear response factor
-**G<sub>12</sub>** = shear modulus (MPa)
-**t** = cured ply thickness (mm)
-**E<sub>11</sub>** = longitudinal modulus (MPa)
-**E<sub>22</sub>** = transverse modulus (MPa)
-**ν<sub>21</sub>** =  Poisson's ratio 21-direction (-)
-**G<sub>Ic</sub>** = mode I fracture toughness (N/mm)
-**G<sub>IIc</sub>** = mode II fracture toughness (N/mm)
+**X<sub>T</sub>** = tensile strength fiber direction (GPa)   
+**X<sub>C</sub>** = compressive strength fiber direction (GPa)   
+**Y<sub>T</sub><sup>is</sup>** =  in-situ tensile strength transverse direction (GPa)   
+**Y<sub>C</sub><sup>is</sup>** = in-situ compressive strength transverse direction (GPa)   
+**S<sub>L</sub><sup>is</sup>** = in-situ longitudinal shear strength (GPa)   
+**η<sub>L</sub>** = shear friction coefficient longitudinal direction (-)   
+**α<sub>0</sub>** = failure plane angle pure transverse compression (degrees)   
+   
+If the in-situ properties are unknown, they can be calculated using the insitu_prop_calculator.py script. This will require the following material properties   
+**β** = shear response factor   
+**G<sub>12</sub>** = shear modulus (MPa)   
+**t** = cured ply thickness (mm)   
+**E<sub>11</sub>** = longitudinal modulus (MPa)   
+**E<sub>22</sub>** = transverse modulus (MPa)   
+**ν<sub>21</sub>** =  Poisson's ratio 21-direction (-)   
+**G<sub>Ic</sub>** = mode I fracture toughness (N/mm)   
+**G<sub>IIc</sub>** = mode II fracture toughness (N/mm)   
 
 ## List of Fortran source code
 - **catalanotti.f** : Catalanotti failure criteria
