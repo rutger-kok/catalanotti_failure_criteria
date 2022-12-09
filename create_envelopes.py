@@ -71,10 +71,6 @@ def create_envelope(dir1, dir2):
     trial_stress = np.zeros((6, 1))  # initialize trial_stress vector
     failure_coords = np.zeros((n, 2))  # initialize failure coords array
     for i in range(n):
-        for j in range(n):
-            # assign trial stresses
-            trial_stress[idx1] = min_stress_1 + i * stress_inc_1
-            trial_stress[idx2] = min_stress_2 + j * stress_inc_2
             # initialize failure indices
             fi_lc, fi_m, fi_lt = 0.0, 0.0, 0.0
             if trial_stress[0] > 0.0:  # longitudinal tensile failure
