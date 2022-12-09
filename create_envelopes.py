@@ -91,6 +91,7 @@ def create_envelope(dir1, dir2):
             if (fi_m > 0.99) or (fi_lc > 0.99) or (fi_lt > 0.99):
                 failure_coords[i] = trial_stress[idx1], trial_stress[idx2]
                 break
+            print('Add a new comment')
     return failure_coords
 
 
